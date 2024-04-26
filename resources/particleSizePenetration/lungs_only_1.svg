@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 28.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 382.6 461.3" style="enable-background:new 0 0 382.6 461.3;" xml:space="preserve">
+<svg version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 382.6 461.3" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:#D8CEBF;}
 	.st1{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFCC;}
@@ -15,8 +15,8 @@
 	.st9{display:inline;fill-rule:evenodd;clip-rule:evenodd;fill:#8D5F46;}
 	.st10{display:none;fill-rule:evenodd;clip-rule:evenodd;}
 	.st11{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
-	.st12{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000055690598894762901080000015953794413822240896_);}
-	.st13{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000165198272454393954710000015149924603765875618_);}
+	.st12{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000181050593845325574670000013066524234120294568_);}
+	.st13{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000040575245003028752330000001866038118848947647_);}
 	.st14{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:#483759;}
 	.st15{display:inline;fill-rule:evenodd;clip-rule:evenodd;fill:#FD8646;}
 	.st16{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:#2D7599;}
@@ -122,11 +122,11 @@
 		<path class="st11" d="M178.3,129.6c-17.1,2-27.4,28.4-29.5,42.5c-1.9,13.5-2.8,31.9-0.8,42c2,10.2,10.1,20,10.1,20
 			s24-29.6,29.8-33.3c5.4-3.7,8.4-8.8,8.4-13.5c0-4.8,1.7-37.4,1.7-37.4C194.4,144,187.4,128.5,178.3,129.6z"/>
 		
-			<radialGradient id="SVGID_00000142885649287771692740000013158978824867807421_" cx="229.0533" cy="627.4063" r="59.4363" gradientTransform="matrix(1 0 0 -1 0 792)" gradientUnits="userSpaceOnUse">
+			<radialGradient id="SVGID_00000086662500710871884730000008036183111632832934_" cx="229.0533" cy="627.4063" r="59.4363" gradientTransform="matrix(1 0 0 -1 0 792)" gradientUnits="userSpaceOnUse">
 			<stop  offset="0" style="stop-color:#E6E6E6"/>
 			<stop  offset="1" style="stop-color:#4D4D4D"/>
 		</radialGradient>
-		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000142885649287771692740000013158978824867807421_);" d="
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000086662500710871884730000008036183111632832934_);" d="
 			M209.5,134.9c0,0,3.3-10.4,10.7-9.9c21.1,1.2,39.5,44.8,41.9,62c0.2,1.6,3.1,40.9-7.6,36.8c0,0-6.2-8.4-13.8-11.5
 			C211.9,201.4,213.2,160.8,209.5,134.9z"/>
 		<path class="st2" d="M207.3,128.1c18-27.4,47.8-13.3,58.3,13.6c13,25,23.3,82.2,31.2,94.9c8.2,12.1,14,18.5,17.5,32.9
@@ -136,12 +136,12 @@
 			c-13,17.5-22.2,27.1-29.6,49.8c1.1,0.3,1.9,0.8,2.6,1.2c7.6-18.5,12.6-30.1,26.7-44.4c2.6,18.8-1.4,33.7-7.9,51
 			c0.9,0.2,1.9,0.5,2.5,0.9c14.6-35.2,5-46.8,11.3-64.7c7.1-20.5,48.2-161.9,86.5-103.9C202.8,129.2,204.2,128.5,205.6,127.8z"/>
 		
-			<radialGradient id="SVGID_00000058568363538647084560000001177992233223059864_" cx="182.3306" cy="571.4815" r="53.0268" gradientTransform="matrix(1 0 0 -1 0 792)" gradientUnits="userSpaceOnUse">
+			<radialGradient id="SVGID_00000180350008913419878020000004335401556398938267_" cx="182.3306" cy="571.4815" r="53.0268" gradientTransform="matrix(1 0 0 -1 0 792)" gradientUnits="userSpaceOnUse">
 			<stop  offset="0" style="stop-color:#FE9929"/>
 			<stop  offset="1" style="stop-color:#655237"/>
 		</radialGradient>
 		
-			<path style="display:none;fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000058568363538647084560000001177992233223059864_);" d="
+			<path style="display:none;fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000180350008913419878020000004335401556398938267_);" d="
 			M235.4,206.1c0,0-10.9,8.4-15.4,12.1c-8.1,6.7-5,13-19.4,12.1c0,0-0.5,5-4.8,7.4c-4.5,2.5-19.5,11.8-22,14.7
 			c-2.5,3.4-6.7,11.6-9.9,9.6c-3.3-2-10.4-17.1-6.7-34c4.3-20.6,21.6-35.7,44-31.2c3.4,0.8,9.1,1.6,9.1,1.6
 			C219.1,197.7,230.2,197.7,235.4,206.1z"/>
