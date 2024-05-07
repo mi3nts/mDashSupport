@@ -18,7 +18,7 @@
 
 import requests
 import os
-
+import yaml
 # TASKS 
 # 1 Have a mints defenitions file to keep audio, video and images folder for all birds 
 # 2 Have a credentials file to keep 
@@ -26,31 +26,33 @@ import os
 # 4 Using the said list download all bird pictures with the highest rating and with the proper aspect ratio
 # 5 Download the best quality audio video of the said birds 
 
-mqttCredentialsFile      = 'credentials.yaml'
+credentialsFile      = 'credentials.yaml'
 
 # Define the base URL for the Macaulay Library API
-base_url = 'https://search.macaulaylibrary.org/api/v1/'
+base_url    = 'https://search.macaulaylibrary.org/api/v1/'
 
-# Your API key from the Macaulay Library (if required)
-api_key =  '1ghlh5qv0jgm' # Replace 'your_api_key' with your actual API key if needed
+credentials = yaml.load(open(credentialsFile))
 
-# Define the headers with your API key
-headers = {
-    'Authorization': f'Bearer {api_key}' if api_key else None
-}
+api_key     = credentials['eBirdApiKey'] # Replace 'your_api_key' with your actual API key if needed
 
-# Define the common name of the bird you want to search for
-common_name = 'specific_bird_name'  # Replace 'specific_bird_name' with the bird's common name
+print(api_key)
+# # Define the headers with your API key
+# headers = {
+#     'Authorization': f'Bearer {api_key}' if api_key else None
+# }
 
-# Create the search URL with filtering options for exact common name match
-# We use the `&q=` parameter to search for the exact common name
-search_url = f'{base_url}/search?&mediaType=Photo&&regionCode=US-TX'
+# # Define the common name of the bird you want to search for
+# common_name = 'specific_bird_name'  # Replace 'specific_bird_name' with the bird's common name
 
-# Make a request to the Macaulay Library API
-response = requests.get(search_url, headers=headers)
+# # Create the search URL with filtering options for exact common name match
+# # We use the `&q=` parameter to search for the exact common name
+# search_url = f'{base_url}/search?&mediaType=Photo&&regionCode=US-TX'
+
+# # Make a request to the Macaulay Library API
+# response = requests.get(search_url, headers=headers)
 
 
-print(response.text)
+# print(response.text)
 # Check if the request was successful
 # if response.status_code == 200:
 #     # Parse the JSON response
