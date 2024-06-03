@@ -19,7 +19,7 @@
 import requests
 import os
 import yaml
-import pandas as pd 
+import sys
 # TASKS 
 # 1 Have a mints defenitions file to keep audio, video and images folder for all birds 
 # 2 Have a credentials file to keep 
@@ -38,32 +38,66 @@ api_key     = credentials['eBirdApiKey'] # Replace 'your_api_key' with your actu
 
 print(api_key)
 
-# Read csv line bby line 
-
-
-# Define the file path
-file_path_labels = 'https://raw.githubusercontent.com/mi3nts/mDashSupport/main/resources/birdCalls/labels.csv'
-
-# Read the CSV file into a DataFrame
-df_labels = pd.read_csv(file_path_labels)
-
-# Print the DataFrame
-print(df_labels)
-
-# # Save the DataFrame to a new CSV file
-# output_file_path = 'https://raw.githubusercontent.com/mi3nts/mDashSupport/main/resources/birdCalls/labels/labels.csv'
-# df.to_csv(output_file_path, index=False)
-
-
-
-
-
-
-
+# sys.wget("https://cdn.download.ams.birds.cornell.edu/api/v1/asset/618625751/1200")
 # # Define the headers with your API key
 # headers = {
 #     'Authorization': f'Bearer {api_key}' if api_key else None
 # }
+
+import requests
+
+# URL of the file to be downloaded
+url = "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/618625751/1200"
+
+# Send a GET request to the URL
+response = requests.get(url)
+
+# Save the file
+file_path = "bird_image.jpg"
+with open(file_path, 'wb') as file:
+    file.write(response.content)
+
+print(f"File saved to {file_path}")
+# Since this works we need to figure out the asset number from the api
+
+
+# Reading the Birdcall list 
+import pandas as pd
+
+# Replace 'your_file.csv' with the path to your CSV file
+df = pd.read_csv('https://raw.githubusercontent.com/mi3nts/mDashSupport/main/resources/birdCalls/labels/labels.csv')
+
+# Display the first few rows of the DataFrame
+print(df.head())
+
+
+
+import requests
+
+def get_taxonomy_code(scientific_name):
+    url = "https://www.itis.gov/ITISWebService/jsonservice/searchByScientificName"
+    params = {"srchKey": scientific_name}
+    
+    response = requests.get(url, params=params)
+    data = response.json()
+    
+    if data["scientificNames"]:
+        return data["scientificNames"][0]["tsn"]
+    else:
+        return None
+
+scientific_name = "Mimus polyglottos"
+taxonomy_code = get_taxonomy_code(scientific_name)
+print(f"The taxonomy code for {scientific_name} is {taxonomy_code}.")
+
+# The Kind of link that we are looking for 
+# https://search.macaulaylibrary.org/api/v1/search?&taxonCode=normoc&mediaType=photo&age=adult&beginYear=2020&endYear=2024&sort=rating_rank_desc
+# The challenge is to get the taxinomic code 
+
+
+
+
+
 
 # # Define the common name of the bird you want to search for
 # common_name = 'specific_bird_name'  # Replace 'specific_bird_name' with the bird's common name

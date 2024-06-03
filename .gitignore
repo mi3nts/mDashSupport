@@ -1,6 +1,5 @@
 # Added by lakitha
 *.yaml
-*.pics/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -146,6 +145,8 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+
+
 
 # Pyre type checker
 .pyre/
