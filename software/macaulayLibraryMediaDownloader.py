@@ -19,6 +19,7 @@
 import requests
 import os
 import yaml
+import pandas as pd 
 # TASKS 
 # 1 Have a mints defenitions file to keep audio, video and images folder for all birds 
 # 2 Have a credentials file to keep 
@@ -36,6 +37,29 @@ credentials = yaml.load(open(credentialsFile))
 api_key     = credentials['eBirdApiKey'] # Replace 'your_api_key' with your actual API key if needed
 
 print(api_key)
+
+# Read csv line bby line 
+
+
+# Define the file path
+file_path = 'birds.csv'
+
+# Read the CSV file into a DataFrame
+df = pd.read_csv(file_path)
+
+# Print the DataFrame
+print(df)
+
+# Save the DataFrame to a new CSV file
+output_file_path = 'https://raw.githubusercontent.com/mi3nts/mDashSupport/main/resources/birdCalls/labels/labels.csv'
+df.to_csv(output_file_path, index=False)
+
+
+
+
+
+
+
 # # Define the headers with your API key
 # headers = {
 #     'Authorization': f'Bearer {api_key}' if api_key else None
