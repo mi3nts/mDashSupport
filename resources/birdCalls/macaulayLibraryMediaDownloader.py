@@ -95,7 +95,24 @@ print(f"The taxonomy code for {scientific_name} is {taxonomy_code}.")
 # The challenge is to get the taxinomic code 
 
 
+url = "https://search.macaulaylibrary.org/api/v1/search"
+params = {
+    "taxonCode": "normoc",
+    "mediaType": "photo",
+    "age": "adult",
+    "beginYear": 2020,
+    "endYear": 2024,
+    "sort": "rating_rank_desc"
+}
 
+response = requests.get(url, params=params)
+
+if response.status_code == 200:
+    data = response.json()
+    # Do something with the data
+    print(data)
+else:
+    print("Error:", response.status_code)
 
 
 
