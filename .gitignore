@@ -1,7 +1,7 @@
 # Added by lakitha
-*./photo
-*./video
-*./audio
+*.photo
+*.video
+*.audio
 *.yaml
 
 # Byte-compiled / optimized / DLL files
